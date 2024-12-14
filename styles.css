@@ -1,0 +1,110 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #57C1EB, #246FA8);
+    color: #fff;
+}
+
+/* Main Container */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Title */
+h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    text-shadow: 0 0 20px #fff, 0 0 40px #87CEFA;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 40px;
+    opacity: 0.8;
+}
+
+/* Search Bar Container */
+.search-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px; /* Restrict width */
+    margin: 0 auto;
+}
+
+/* Styling the search input */
+input.gsc-input {
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1.3rem;
+    color: #333;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+input.gsc-input:focus {
+    outline: none;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
+}
+
+/* Styling the search button */
+button.gsc-search-button {
+    height: 50px;
+    width: 100px;
+    margin-left: 10px;
+    font-size: 1rem;
+    color: white;
+    background: linear-gradient(45deg, #57C1EB, #246FA8);
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+button.gsc-search-button:hover {
+    background: linear-gradient(45deg, #246FA8, #57C1EB);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .search-container {
+        padding: 0 10px;
+    }
+
+    input.gsc-input {
+        font-size: 1rem;
+    }
+
+    button.gsc-search-button {
+        width: 80px;
+    }
+}
